@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: #141414;
+    color: rgba(100%, 100%, 100%, 0.8);
+}
+
+.sm-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sm-container{
+    background: #1f1f1f;
+    border-radius: 10px;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.sm-container .user-img{
+    width: 65px;
+    margin: 0 auto;
+}
+
+.sm-container .user-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.sm-container .user-details{
+    margin: 20px 0;
+}
+
+.sm-container .name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.sm-container .location{
+    color: #c5f82a;
+}
+
+.sm-container .user-bio{
+    color: rgba(100%, 100%, 100%, 0.7)
+}
+
+.sm-links{
+    list-style-type: none;    
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.sm-links li{
+    background: #333333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sm-links li:last-child{
+    margin-bottom: 0;
+}
+
+.sm-links li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: 700;
+    display: block;
+}
+
+.sm-links li:hover{
+    background: #c5f82a;
+    color: #141414;
+}
+
+@media (max-width: 640px){
+    .sm-container{
+        margin: 24px;
+    }
+}
+
